@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Output</title>
+</head>
+<body>
+	{% if posts.sentiment.polarity > 0 %}
+	<h1>Postive Sentiment</h1>
+	{% endif %}
+	{% if posts.sentiment.polarity < 0 %}
+	<h1>Negative Sentiment</h1>
+	{% endif %}
+	{% if posts.sentiment.polarity == 0 %}
+	<h1>Neutral Sentiment</h1>
+	{% endif %}
+</body>
+</html>
